@@ -3,11 +3,11 @@ Image segmentation of a chettah image using different statistical learning algor
 
 This project aims to segment the following cheetah image into its two components, cheetah (foreground) and grass (background).
 
-![cheetah](naive_bayes\cheetah.bmp)
+![cheetah](naive_bayes/cheetah.bmp)
 
 The goal is to obtain a mask image as follows:
 
-![cheetah](naive_bayes\cheetah_mask.bmp)
+![cheetah](naive_bayes/cheetah_mask.bmp)
 
 ## Discrete Cosine Transform(DCT)
 To formulate this as a pattern recognition problem an observation space of 8x8 image blocks is used, i.e. each image as a collection of 8x8 blocks.
