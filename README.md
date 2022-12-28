@@ -1,0 +1,2 @@
+# Image_Segmentation_using_Statistical_Learning_Methods
+Image segmentation of a chettah image using different statistical learning algortihms
