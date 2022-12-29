@@ -71,5 +71,5 @@ else{
 ##### Probability of error using 64 is 0.083573$
 ##### Probability of error using best 8 is 0.051416
 The segmented masks obtained by using 64 features and 8 features are as follows:
-[s1](maximum_likelihood_estimation/results/s1.png)
-[s2](maximum_likelihood_estimation/results/s2.png)
+![s1](maximum_likelihood_estimation/results/s1.png)
+![s2](maximum_likelihood_estimation/results/s2.png)
