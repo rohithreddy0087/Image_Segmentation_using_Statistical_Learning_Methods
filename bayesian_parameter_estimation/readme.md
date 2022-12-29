@@ -27,10 +27,10 @@ $$\Sigma_n = \Sigma_0(\Sigma_0 + {1 \over n}\Sigma)^{-1}{1 \over n}\Sigma$$
    This histogram plot of the given dataset is of multinomial distribution. The observations have a probabilty distribution $P_k = \pi_k$ where $k = {1,2}$. Using the Maximum Likelihood estimate we obtain $\pi_k = {c_j \over n}$ where $c = {c_1,c_2}$ are the number of times that the observed value is $k$.
    In this problem $c_1 = 75$, $c_1 = 300$ and $n = c_1 + c_2 = 375$
    1. Prior probability of cheetah is 
-        $P_{y}(cheetah) = P_1 = \pi_1 = {c_1 \over n}
+        $P_{y}(cheetah) = {c_1 \over n}
             	               = {75 \over 375} = 0.2$
    2. Prior probability of grass is 
-        $P_{y}(grass) = P_2 = \pi_2 = {c_2 \over n}
+        $P_{y}(grass) = {c_2 \over n}
             	               = {300 \over 375} = 0.8$
 3. Since $\Sigma_0$ is a function of $\alpha$, following steps are repeated in a loop.
 4. It is given that $\Sigma_0$ is a diagonal matrix and we compute $\Sigma_0$ for every given $\alpha$ using the priors($w_i$) provided. $\Sigma_0$ is same for both foreground and background. $\mu_0$ is also provided for both the foreground and background along with the dataset.
@@ -56,15 +56,15 @@ $$P_{X,T}(x,D) = G(x,\mu_{MAP},\Sigma)$$
 $$\mu_{MAP} = \mu_n = \Sigma_0(\Sigma_n + {1 \over n}\Sigma)^{-1}\mu_{ML} + {1 \over n}\Sigma(\Sigma_0 + {1 \over n}\Sigma)^{-1}\mu_{0}$$
 
 ## Curves of classification error as a function of $\alpha$
-![p1d1](results/Prior 1 Dataset 1.png)
-![p1d2](results/Prior 1 Dataset 2.png)
-![p1d3](results/Prior 1 Dataset 3.png)
-![p1d4](results/Prior 1 Dataset 4.png)
-![p2d1](results/Prior 2 Dataset 1.png)
-![p2d2](results/Prior 2 Dataset 2.png)
-![p2d3](results/Prior 2 Dataset 3.png)
-![p2d4](results/Prior 2 Dataset 4.png)
+![p1d1](results/Prior_1_Dataset_1.png)
+![p1d2](results/Prior_1_Dataset_2.png)
+![p1d3](results/Prior_1_Dataset_3.png)
+![p1d4](results/Prior_1_Dataset_4.png)
+![p2d1](results/Prior_2_Dataset_1.png)
+![p2d2](results/Prior_2_Dataset_2.png)
+![p2d3](results/Prior_2_Dataset_3.png)
+![p2d4](results/Prior_2_Dataset_4.png)
 
 ## Final Output
-![bpm](results/bpm.png)
 ##### Probability of error is 0.076
+![bpm](results/bpm.png)
