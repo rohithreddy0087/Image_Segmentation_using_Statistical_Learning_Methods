@@ -9,6 +9,14 @@ The goal is to obtain a mask image as follows:
 
 ![cheetah](naive_bayes/cheetah_mask.bmp)
 
+## Summary
+1. Naive bayes - Error =  0.1699
+2. Maximum Likelihood estimation - Error = 0.083573
+3. Bayes Parameter Estimation - Error = 0.076
+4. Expectation Maximization - Error = 0.0467
+
+As we move from one method to another, the probabilty of error decreases.
+
 ## Discrete Cosine Transform(DCT)
 To formulate this as a pattern recognition problem an observation space of 8x8 image blocks is used, i.e. each image as a collection of 8x8 blocks.
 For each block DCT is computed as an array of 8 x 8 frequency coeffcients. Since cheetah and the grass have different
