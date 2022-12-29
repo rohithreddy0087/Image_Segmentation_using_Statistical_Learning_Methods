@@ -16,4 +16,4 @@ $$\pi_j^{(n+1)} = {1 \over n}\sum_{i}h_{ij}$$
 5. Repeating above steps for each pixel, class is assigned and a segmentation mask is created.
 #### Final Output
 ##### Probability of error is 0.0467
-![em](expectation_maximization/results/em.png)
+![em](results/em.png)
