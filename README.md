@@ -42,7 +42,7 @@ $$
 	        $$P_{Y|X}(grass|x) = P_{X|Y}(x|grass)P_{y}(grass)$$
 5. From bayes decision rule,
 ```
-if ($P_{Y|X}(cheetah|x) \geq P_{Y|X}(grass|x)$){
+if ($P_{Y|X}(cheetah|x)$ >= $P_{Y|X}(grass|x)$){
         y = 1;
 }
 else{
@@ -51,9 +51,9 @@ else{
 ```
 6. Repeating above, class is assigned for each pixel and a segmentation mask is created.
 
-#### Probabilty of error =  0.1699
-
 #### Final Output
+##### Probabilty of error =  0.1699
+
 ![output](naive_bayes/results/out.png)
 
 ## Maximum Likelihood estimation
@@ -62,15 +62,14 @@ else{
 2. DCT for this $8\times8$ window is computed and then is converted into a feature vector using zig-zag sequence scanning.
 3. Based on the problem asked we use all 64 features or the best eight features. Using these features class of the pixel is determined
 4. From bayes decision rule,
-        $$i^*(x) = \argmin_i[d_i(x,\mu_i) + \alpha_i] $$ where
+        $$i^*(x) = argmin_i[d_i(x,\mu_i) + \alpha_i] $$ where
         $$d_i(x,y) = (x-y)^\top\Sigma_i^{-1}(x-y)$$
         $$\alpha_i = log(2\pi)^d|\Sigma_i| - 2logP_Y(i)$$
 5. Repeating above steps for each pixel, class is assigned and a segmentation mask is created.
 
-#### Probability of error using $\bold{64\ features}$ is $\bold{0.083573}$ 
-#### Probability of error using best $\bold{8\ features}$ is $\bold{0.051416}$
-
 #### Final Output
+##### Probability of error using 64 is 0.083573$
+##### Probability of error using best 8 is 0.051416
 The segmented masks obtained by using 64 features and 8 features are as follows:
 [s1](maximum_likelihood_estimation/results/s1.png)
 [s2](maximum_likelihood_estimation/results/s2.png)
