@@ -3,9 +3,9 @@ To perform EM we must first randomly initialize our 3 parameters, $\pi$, $\mu$ a
 
 Following equations are obtained from EM:
 $$h_{ij} = P_{Z|X}(e_j|x_i; \Psi^{(n)}) = { G(x_i,\mu_j^{(n)},\Sigma_j^{(n)})\pi_j^{(n)} \over \sum_{k=1}^{C}G(x_i,\mu_k^{(n)},\Sigma_k^{(n)})\pi_k^{(n)} }$$
-$$ \mu_j^{(n+1)} = {\sum_{i}h_{ij}x_i \over \sum_{i}h_{ij}} $$
-$$ \sigma_j^{2(n+1)} = {\sum_{i}h_{ij}(x_i - \mu_j)^2 \over \sum_{i}h_{ij}} $$
-$$ \pi_j^{(n+1)} = {1 \over n}\sum_{i}h_{ij} $$
+$$\mu_j^{(n+1)} = {\sum_{i}h_{ij}x_i \over \sum_{i}h_{ij}}$$
+$$\sigma_j^{2(n+1)} = {\sum_{i}h_{ij}(x_i - \mu_j)^2 \over \sum_{i}h_{ij}}$$
+$$\pi_j^{(n+1)} = {1 \over n}\sum_{i}h_{ij}$$
 
 
 #### Segmentation of Cheetah
